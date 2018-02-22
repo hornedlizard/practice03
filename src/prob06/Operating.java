@@ -1,13 +1,13 @@
 package prob06;
 
 public abstract class Operating {
-	int a;
-	int b;
+	private int a;
+	private int b;
 	
-	void setValue(int a, int b) {
+	public void setValue(int a, int b) {
 		this.a = a;
 		this.b = b;
 	}
 	
-	abstract int calculate();
+	public abstract int calculate();
 }

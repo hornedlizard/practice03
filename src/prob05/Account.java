@@ -24,12 +24,12 @@ public class Account {
 	}
 	
 	public void save(int money) {
-		setBalance(getBalance()+money);
+		this.balance+=money;
 		System.out.println(this.accountNo+"계좌에 "+money+"만원이 입금되었습니다.");
 	}
 	
 	public void deposit(int money) {
-		setBalance(getBalance()-money);
+		balance-=money;
 		System.out.println(this.accountNo+"계좌에 "+money+"만원이 출금되었습니다.");
 	}
 	
